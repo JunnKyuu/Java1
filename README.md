@@ -34,3 +34,11 @@
 
 - ASCII 코드에 대한 이해
 - 아스키코드 숫자 2개를 입력받아 정수로 변환 후 합을 구하고 다시 아스키코드로 
+
+---
+<br>
+
+5. 230320_ASCII_sum
+
+- ASCII를 입력받아 Int로 바꿔서 합 구하기
+- macOS는 엔터를 누르면 'CRLF' 중 'LF'만 받는다. ([참고 링크](https://www.oreilly.com/library/view/mac-os-x/0596004605/ch01s06.html))
