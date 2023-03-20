@@ -42,3 +42,11 @@
 
 - ASCII를 입력받아 Int로 바꿔서 합 구하기
 - macOS는 엔터를 누르면 'CRLF' 중 'LF'만 받는다. ([참고 링크](https://www.oreilly.com/library/view/mac-os-x/0596004605/ch01s06.html))
+
+---
+<br>
+
+6. 230321_Int_to_ASCII
+
+- Int를 입력받아 ASCII로 바꾸기
+
