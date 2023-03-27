@@ -12,28 +12,31 @@ public class Calculator {
 	
 	private int readInt() throws IOException {
 		final int LineFeed = 0x0a;
-		
+		int code = System.in.read(); // 입력받기
 		int number = 0;
-		int code = System.in.read();
 		
-		while(code >= '0' && code <= '9') {
-			number = number * 10 + (code - '0');
-			code = System.in.read();
-		} // 숫자가 아닌 것을 걸러냄 
-		
-		if(code == LineFeed) {
-			// 정상일 때 
-			return number;
+		if(code == '+') {
+			number += add();
 		} else {
-			// exception 발생
-			// 그냥 오류를 날리니까 리턴할 것이 없다
-			throw new IOException();  
+			while(code >= '0' && code <= '9') {
+				number = number * 10 + (code - '0');
+				code = System.in.read();
+			} // 숫자가 아닌 것을 걸러냄 
+			
+			if(code == LineFeed) {
+				// 정상일 때 
+			} else {
+				// exception 발생
+				throw new IOException();  
+			}
 		}
+		
+		return number;
 	} 
 	
 	private int add() throws IOException {
 		// 덧셈 함수 
-		int number1 = readInt(); // 이것도 맘에 안들어서 readOperand도 만들자! 
+		int number1 = readInt();  
 		int number2 = readInt();
 		int value = number1 + number2;
 		return value;
@@ -71,19 +74,34 @@ public class Calculator {
 			
 			if(code == '+') {
 				result = add();
+				
+				System.out.print("결과 : ");
+				System.out.println(result);
 			} else if(code == '-') {
 				result = subtract();
+				
+				System.out.print("결과 : ");
+				System.out.println(result);
 			} else if(code == '*') {
 				result = multiply();
-			} else {
+				
+				System.out.print("결과 : ");
+				System.out.println(result);
+			} else if(code == '/') {
 				result = divide();
+				
+				System.out.print("결과 : ");
+				System.out.println(result);
+			} else {
+				System.out.println("잘못된 연산자입니다.");
+				System.out.println("연산자를 다시 입력해주세요.");
+				
+				Calculator c = new Calculator();
+				c.run(); // 잘못된 연산자가 입력되면 다시 입력받기 	
 			}
-			System.out.print("결과 : ");
-			System.out.println(result);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.exit(0);
 		}
 	}
 }
