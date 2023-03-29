@@ -5,19 +5,19 @@ public class Calculator {
 		// TODO Auto-generated method stub
 		// 연산자를 판단하는 함수 
 		int operator = System.in.read();
-		System.in.read(); // LF가 들어가서 날려버린다. 
+		System.in.read(); // LF가 들어가서 날려버린다. (맥은 이것만)
 		
 		return operator;
 	}
 	
 	private int readInt() throws IOException {
+		// 계산하는 함수 
 		final int LineFeed = 0x0a;
-		int code = System.in.read(); // 입력받기
+		
+		int code = System.in.read();
 		int number = 0;
 		
-		if(code == '+') {
-			number += add();
-		} else {
+		if(code >= '0' && code <= '9') {
 			while(code >= '0' && code <= '9') {
 				number = number * 10 + (code - '0');
 				code = System.in.read();
@@ -29,40 +29,52 @@ public class Calculator {
 				// exception 발생
 				throw new IOException();  
 			}
+		} else {
+			System.in.read(); // (맥은 한번만)
+			
+			if(code == '+') { 
+				number = add();
+			} else if(code == '-') {
+				number = subtract();
+			} else if(code == '*') {
+				number = multiply();
+			} else {
+				number = divide();
+			}
 		}
 		
 		return number;
-	} 
+	}
 	
 	private int add() throws IOException {
 		// 덧셈 함수 
-		int number1 = readInt();  
-		int number2 = readInt();
-		int value = number1 + number2;
+		int input1 = readInt();  
+		int input2 = readInt();
+		int value = input1 + input2;
 		return value;
 	}
 	
 	private int multiply() throws IOException {
 		// 곱셈 함수 
-		int number1 = readInt();
-		int number2 = readInt();
-		int value = number1 * number2;
+		int input1 = readInt();  
+		int input2 = readInt();
+		int value = input1 * input2;
 		return value;
 	}
 	
 	private int subtract() throws IOException {
 		// 뺄셈 함수 
-		int number1 = readInt();
-		int number2 = readInt();
-		int value = number1 - number2;
+		int input1 = readInt();  
+		int input2 = readInt();
+		int value = input1 - input2;
 		return value;
 	}
 	
 	private int divide() throws IOException {
 		// 나눗셈 함수 
-		int number1 = readInt();
-		int number2 = readInt();
-		int value = number1 / number2;
+		int input1 = readInt();  
+		int input2 = readInt();
+		int value = input1 / input2;
 		return value;
 	}
 	
@@ -92,7 +104,10 @@ public class Calculator {
 				
 				System.out.print("결과 : ");
 				System.out.println(result);
-			} else {
+			} else if(code == 'q') {
+				System.out.println("q를 눌러서 종료합니다.");
+				System.exit(code);
+			}else {
 				System.out.println("잘못된 연산자입니다.");
 				System.out.println("연산자를 다시 입력해주세요.");
 				
