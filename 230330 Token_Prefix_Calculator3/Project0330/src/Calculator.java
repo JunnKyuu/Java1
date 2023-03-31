@@ -1,21 +1,30 @@
 import java.io.IOException;
 
 public class Calculator {
+	static final int CarriageReturn = 0x0d; // CR
+	static final int Space = 0x20; // Space
+	static final int Tab = 0x09; // Tab
+	
 	private int readOperator() throws IOException {
 		// TODO Auto-generated method stub
 		// 연산자를 판단하는 함수 
+		
 		int operator = System.in.read();
-		System.in.read(); // LF가 들어가서 날려버린다. (맥은 이것만)
-		System.in.read(); // 윈도우는 2번 
+		int operator2 = System.in.read();
+		
+		if(operator2 == CarriageReturn) {
+			System.in.read(); // LF 제거
+		} else if(operator == Space) {
+			// empty
+		} else if(operator == Tab) {
+			// empty
+		}
 		
 		return operator;
 	}
 	
 	private int readInt() throws IOException {
 		// 계산하는 함수 
-		final int LineFeed = 0x0a;
-		final int Space = 0x20;
-		final int Tab = 0x09;
 		
 		int code = System.in.read();
 		int number = 0;
@@ -25,12 +34,16 @@ public class Calculator {
 			code = System.in.read();
 		} // 숫자가 아닌 것을 걸러냄 
 		
-		if((code == LineFeed) || (code == Space) || (code == Tab)) {
-			// 엔터, 스페이스, 탭를 입력했을 때 
+		if(code == CarriageReturn) {
+			System.in.read(); // LF 제거
+			 
+			return number;
+		} else if(code == Space) {
+			return number;
+		} else if(code == Tab) {
 			return number;
 		} else {
-			// exception 발생
-			throw new IOException();  
+			throw new IOException();
 		}
 	}
 	
