@@ -6,6 +6,7 @@ public class Calculator {
 		// 연산자를 판단하는 함수 
 		int operator = System.in.read();
 		System.in.read(); // LF가 들어가서 날려버린다. (맥은 이것만)
+		System.in.read(); // 윈도우는 2번 
 		
 		return operator;
 	}
