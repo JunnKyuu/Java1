@@ -1,6 +1,4 @@
-## 2023학년도 1학기 절차적 사고와 프로그래밍💻
-
-### 절차적 사고와 프로그래밍 수업을 듣고 정리하는 레포지토리입니다.
+## Java💻
 
 ---
 <br>
@@ -94,3 +92,10 @@
 12. 230412 Login_V2
 
 - Account.txt파일에 있는 account 정보 받아서 로그인 확인
+
+---
+<br>
+
+13. Midterm_Project
+
+- Sugangsincheong_Project : 수강신청 프로그램 구현
