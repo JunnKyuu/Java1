@@ -18,9 +18,9 @@ public class Psugangsincheong {
 				
 		System.out.println(vUserInfo.getName() + "님 안녕하세요.");
 		System.out.println("캠퍼스 코드를 선택하세요.");
-						
-		Scanner campusFile = new Scanner(new File("data/root"));
-		 
+		
+		Scanner campusFile = new Scanner(new File("./data/root.txt"));
+
 		while(campusFile.hasNext()) {
 			int campusCode = campusFile.nextInt();
 			String campusName = campusFile.next();
