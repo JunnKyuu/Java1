@@ -9,8 +9,8 @@ public class Main {
 		PLogin pLogin = new PLogin();
 		VUserInfo vUserInfo = pLogin.login();
 		if(vUserInfo != null) {			
-			Psugangsincheong psugangsincheong = new Psugangsincheong(vUserInfo);
-			psugangsincheong.run();
+			PSugangsincheong pSugangsincheong = new PSugangsincheong(vUserInfo);
+			pSugangsincheong.run();
 		}
 	}
 	

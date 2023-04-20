@@ -2,19 +2,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Psugangsincheong {
+public class PSugangsincheong {
 	private VUserInfo vUserInfo;
 	
-	public Psugangsincheong(VUserInfo vUserInfo) {
+	public PSugangsincheong(VUserInfo vUserInfo) {
 		try {
 		this.vUserInfo = vUserInfo;
-		
-		// 강좌선택은 용인(1), 서울(2) 2 선택
-		// 교양(11), ICT(12) 12선택
-		// 111 융소, 112 데테 111선택  
-		// --> 이런 것들은 데이터를 찾아가기 위한 index 파일 
-				
-		// 1111 절프A 09:00 ~ 10:15 월/수 최성운교수님/ 1305 ,,, 이런식 --- 이것은 진짜 데이터 파일  
 				
 		System.out.println(vUserInfo.getName() + "님 안녕하세요.");
 		System.out.println("캠퍼스 코드를 선택하세요.");
