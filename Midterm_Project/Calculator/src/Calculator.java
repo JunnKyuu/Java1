@@ -86,12 +86,11 @@ public class Calculator {
 			while(code != 'q') {
 				int result = compute(code);
 				System.out.println("답: " + result);
-				System.out.println("-------------------------------------------------------------------");
+				System.out.println("---------------------------------------------------------------------");
 				code = readOperator();
 			}
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
