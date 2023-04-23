@@ -8,7 +8,8 @@ public class PSugangsincheong {
 	public PSugangsincheong(VUserInfo vUserInfo) {
 		try {
 		this.vUserInfo = vUserInfo;
-				
+		
+		System.out.println("---------------로그인 성공---------------");
 		System.out.println(vUserInfo.getName() + "님 안녕하세요.");
 		System.out.println("캠퍼스 코드를 선택하세요.");
 		
@@ -23,17 +24,19 @@ public class PSugangsincheong {
 		}
 		
 		campusFile.close();
-		
-		// 이게 되면 pcampus, pcollege new를 해서 화면의 트리구조를 만든다. 
-		
+				
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}	
 
-	public void run() {
+	public void run() {		
+		PCampus pCampus = new PCampus();
+		VUserCampus vUserCampus = pCampus.getCampusInfo();
 		
+		if(vUserCampus != null) {	
+			System.out.println("---------------캠퍼스 선택 성공---------------");
+			System.out.println("안녕하세요 " + vUserInfo.getName() + "님! \n" + vUserCampus.getCampusName() + "캠퍼스 수강신청을 시작하겠습니다.");
+		}
 	}
-
 }

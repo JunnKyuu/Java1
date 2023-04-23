@@ -1,6 +1,7 @@
 
 public class VUserInfo {
 	private String name;
+	
 	public String getName() {
 		return name;
 	}

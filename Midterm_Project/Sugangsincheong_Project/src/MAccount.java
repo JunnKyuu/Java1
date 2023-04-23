@@ -3,11 +3,9 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class MAccount {
-
-	public VUserInfo login(VLogin vLogin) {
-		VUserInfo vUserInfo = null; 
-		// 항상 그릇을 null로 세팅하고 찾으면 그거 반환하고 못찾으면 null 반
-		// 유저 아이디를 찾아서 vUserIdInfo를만들어서 반환 
+	
+	public VUserInfo login(VLogin vLogin) { 
+		VUserInfo vUserInfo = null;
 		
 		File file = new File("./data/Account.txt");
 		Scanner scanner = null;
@@ -15,7 +13,6 @@ public class MAccount {
 		try {
 			scanner = new Scanner(file);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -35,10 +32,34 @@ public class MAccount {
 				}
 			}
 		}
-		scanner.close();
 		
 		return vUserInfo;
 	}
-	
-	
+
+	public VUserCampus campus(VCampus vCampus) {
+		VUserCampus vUserCampus = null;
+		
+		File file = new File("./data/root.txt");
+		Scanner scanner = null;
+		
+		try {
+			scanner = new Scanner(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		while(scanner.hasNext()) {
+			String code = scanner.nextLine(); 
+			String[] tokens = code.split(" "); 
+			
+			if(tokens[0].equals(vCampus.getCampusCode())) {
+				vUserCampus = new VUserCampus();
+				vUserCampus.setCampusCode(tokens[0]);
+				vUserCampus.setCampusName(vCampus.getCampusName());
+				break;
+			}
+		}
+		
+		return vUserCampus;
+	}
 }
