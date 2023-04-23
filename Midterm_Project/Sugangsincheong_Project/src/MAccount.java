@@ -62,4 +62,38 @@ public class MAccount {
 		
 		return vUserCampus;
 	}
+
+//	public VUserCollege college(VCollegeCode vCollegeCode) {
+//		VUserCollege vUserCollege = null;
+//		String temp = vCollegeCode.getCollegeCode();
+//		
+//		if(temp == '1') {
+//			File file = new File("./data/yongin.txt");
+//		} else {
+//			File file = new File("./data/seoul.txt");
+//		}
+//		
+//		
+//		Scanner scanner = null;
+//		
+//		try {
+//			scanner = new Scanner(file);
+//		} catch (FileNotFoundException e) {
+//			e.printStackTrace();
+//		}
+//		
+//		while(scanner.hasNext()) {
+//			String code = scanner.nextLine(); 
+//			String[] tokens = code.split(" "); 
+//			
+//			if(tokens[0].equals(vCollegeCode.getCollegeCode())) {
+//				vUserCollege = new VUserCollege();
+//				vUserCollege.setCollegeCode(tokens[0]);
+//				vUserCollege.setCollegeName(vCollegeCode.getCollegeName());
+//				break;
+//			}
+//		}
+//		
+//		return vUserCollege;	
+//	}
 }

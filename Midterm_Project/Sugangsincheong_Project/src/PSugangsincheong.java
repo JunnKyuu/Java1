@@ -36,7 +36,10 @@ public class PSugangsincheong {
 		
 		if(vUserCampus != null) {	
 			System.out.println("---------------캠퍼스 선택 성공---------------");
-			System.out.println("안녕하세요 " + vUserInfo.getName() + "님! \n" + vUserCampus.getCampusName() + "캠퍼스 수강신청을 시작하겠습니다.");
+			System.out.println("안녕하세요 " + vUserInfo.getName() + "님!");
+			
+			PCollege pCollege = new PCollege(vUserCampus);
+			pCollege.run();
 		}
 	}
 }

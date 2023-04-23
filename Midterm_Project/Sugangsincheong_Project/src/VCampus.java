@@ -13,8 +13,11 @@ public class VCampus {
 		
 		if(temp == '1') {
 			campusName = "용인";
-		} else {
+		} else if(temp == '2'){
 			campusName = "서울";
+		} else {
+			System.out.println("잘못입력하셨으므로 종료합니다.");
+			System.exit(0);
 		}
 	}
 	
