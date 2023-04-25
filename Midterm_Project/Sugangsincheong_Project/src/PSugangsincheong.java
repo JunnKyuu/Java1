@@ -38,8 +38,8 @@ public class PSugangsincheong {
 			System.out.println("---------------캠퍼스 선택 성공---------------");
 			System.out.println("안녕하세요 " + vUserInfo.getName() + "님!");
 			
-			PCollege pCollege = new PCollege(vUserCampus);
-			pCollege.run();
+			PSelectCollege pSellectCollege = new PSelectCollege(vUserCampus);
+			pSellectCollege.run();
 		}
 	}
 }

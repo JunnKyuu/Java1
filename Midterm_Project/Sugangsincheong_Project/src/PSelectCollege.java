@@ -2,10 +2,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class PCollege {
+public class PSelectCollege {
 	private VUserCampus vUserCampus;
 
-	public PCollege(VUserCampus vUserCampus) {
+	public PSelectCollege(VUserCampus vUserCampus) {
 		try {
 			this.vUserCampus = vUserCampus;
 			
@@ -14,7 +14,7 @@ public class PCollege {
 			
 			String tempCode = vUserCampus.getCampusCode();
 			char tempC = tempCode.charAt(0);
-			
+
 			if(tempC == '1') {
 				Scanner collegeFile = new Scanner(new File("./data/yongin.txt"));
 				
@@ -47,8 +47,6 @@ public class PCollege {
 	}
 
 	public void run() {
-//		PCollegeCode pCollegeCode = new PCollegeCode();
-//		VUserCollege vUserCollege = pCollegeCode.getCollegeInfo();
 		Scanner sc = new Scanner(System.in);
 		String userCode = sc.next();
 		
