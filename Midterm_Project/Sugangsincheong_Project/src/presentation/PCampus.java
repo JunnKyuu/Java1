@@ -7,9 +7,13 @@ import valueObject.VUserCampus;
 
 public class PCampus {
 
-	public VUserCampus getCampusInfo() {
-		Scanner scanner = new Scanner(System.in); 
-		String userCampusCode = scanner.next();
+	public PCampus(Scanner keyboard) {
+		
+	}
+
+	public VUserCampus getCampusInfo(Scanner keyboard) {
+		System.out.print("캠퍼스 코드: ");
+		String userCampusCode = keyboard.next();
 		
 		VCampus vCampus = new VCampus();
 		vCampus.setCampusCode(userCampusCode); 
@@ -24,5 +28,4 @@ public class PCampus {
 		
 		return vUserCampus;
 	}
-
 }

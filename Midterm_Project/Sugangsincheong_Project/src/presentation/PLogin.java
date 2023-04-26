@@ -12,12 +12,12 @@ public class PLogin {
 	}
 
 	public VUserInfo login(Scanner keyboard) {
-//		Scanner keyboard = new Scanner(System.in); 
-		System.out.println("사용자 아이디를 입력하세요.");
-		String userId = keyboard.next(); 
-		System.out.println("사용자 비밀번호 입력하세요.");
+		System.out.println("사용자 아이디와 비밀번호를 입력하세요."); 
+		System.out.print("아이디: ");
+		String userId = keyboard.next();
+		System.out.print("비밀번호: ");
 		String password = keyboard.next();
-//		keyboard.close();
+		System.out.println("");
 		
 		VLogin vLogin = new VLogin();
 		vLogin.setUserId(userId); 
@@ -29,7 +29,7 @@ public class PLogin {
 		if(vUserInfo == null) {
 			System.out.println("잘못입력하셨습니다.");
 		} else {
-			System.out.println(vUserInfo.getName() + "님 안녕하세요.");
+//			System.out.println(vUserInfo.getName() + "님 안녕하세요.");
 		}
 		
 		return vUserInfo;
