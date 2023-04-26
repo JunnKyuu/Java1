@@ -1,3 +1,4 @@
+package valueObject;
 
 public class VLogin {	
 	private String userId;

@@ -1,4 +1,9 @@
+package presentation;
 import java.util.Scanner;
+
+import controll.CCampus;
+import valueObject.VCampus;
+import valueObject.VUserCampus;
 
 public class PCampus {
 

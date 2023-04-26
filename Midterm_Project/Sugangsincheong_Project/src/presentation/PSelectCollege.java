@@ -1,6 +1,9 @@
+package presentation;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+
+import valueObject.VUserCampus;
 
 public class PSelectCollege {
 	private VUserCampus vUserCampus;

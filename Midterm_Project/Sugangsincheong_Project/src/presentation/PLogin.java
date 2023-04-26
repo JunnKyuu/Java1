@@ -1,4 +1,9 @@
+package presentation;
 import java.util.Scanner;
+
+import controll.CLogin;
+import valueObject.VLogin;
+import valueObject.VUserInfo;
 
 public class PLogin {
 	
@@ -6,12 +11,13 @@ public class PLogin {
 		
 	}
 
-	public VUserInfo login() {
-		Scanner scanner = new Scanner(System.in); 
+	public VUserInfo login(Scanner keyboard) {
+//		Scanner keyboard = new Scanner(System.in); 
 		System.out.println("사용자 아이디를 입력하세요.");
-		String userId = scanner.next(); 
+		String userId = keyboard.next(); 
 		System.out.println("사용자 비밀번호 입력하세요.");
-		String password = scanner.next();
+		String password = keyboard.next();
+//		keyboard.close();
 		
 		VLogin vLogin = new VLogin();
 		vLogin.setUserId(userId); 
@@ -22,6 +28,8 @@ public class PLogin {
 		
 		if(vUserInfo == null) {
 			System.out.println("잘못입력하셨습니다.");
+		} else {
+			System.out.println(vUserInfo.getName() + "님 안녕하세요.");
 		}
 		
 		return vUserInfo;

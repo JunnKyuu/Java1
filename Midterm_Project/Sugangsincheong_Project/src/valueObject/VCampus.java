@@ -1,3 +1,4 @@
+package valueObject;
 
 public class VCampus {
 	private String campusCode;

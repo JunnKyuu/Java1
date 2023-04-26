@@ -1,12 +1,18 @@
+package model;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import valueObject.VCampus;
+import valueObject.VLogin;
+import valueObject.VUserCampus;
+import valueObject.VUserInfo;
+
 public class MAccount {
-	
-	public VUserInfo login(VLogin vLogin) { 
-		VUserInfo vUserInfo = null;
-		
+
+	public VUserInfo login(VLogin vLogin) {
+		VUserInfo vUserInfo = null; 
+
 		File file = new File("./data/Account.txt");
 		Scanner scanner = null;
 		
@@ -17,14 +23,12 @@ public class MAccount {
 		}
 		
 		while(scanner.hasNext()) {
-			// 끝까지 찾으면 종료
 			
-			String line = scanner.nextLine(); // 한 라인씩 읽어보자 - 아이디, 비밀번호, 이름 	
-			String[] tokens = line.split(" "); // 빈 칸이 있으면 뜯어줌, 이거 제대로 되게 하는 것이 과제 
+			String line = scanner.nextLine(); 
+			String[] tokens = line.split(" "); 
 			
 			if(tokens[0].equals(vLogin.getUserId())) {
 				if(tokens[1].equals(vLogin.getPassword())) {
-					// 아이디와 비밀번호가 다 같으면 찾은 것
 					
 					vUserInfo = new VUserInfo();
 					vUserInfo.setName(tokens[2]);
@@ -32,10 +36,11 @@ public class MAccount {
 				}
 			}
 		}
+		scanner.close();
 		
 		return vUserInfo;
 	}
-
+	
 	public VUserCampus campus(VCampus vCampus) {
 		VUserCampus vUserCampus = null;
 		
