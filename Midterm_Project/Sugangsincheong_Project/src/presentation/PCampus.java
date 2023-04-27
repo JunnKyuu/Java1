@@ -17,7 +17,6 @@ public class PCampus {
 		
 		VCampus vCampus = new VCampus();
 		vCampus.setCampusCode(userCampusCode); 
-		vCampus.setCampusName(userCampusCode);
 		
 		CCampus cCampus = new CCampus();
 		VUserCampus vUserCampus = cCampus.campusInfo(vCampus);

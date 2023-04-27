@@ -4,8 +4,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import valueObject.VCampus;
+import valueObject.VCollege;
 import valueObject.VLogin;
 import valueObject.VUserCampus;
+import valueObject.VUserCollege;
 import valueObject.VUserInfo;
 
 public class MAccount {
@@ -60,11 +62,70 @@ public class MAccount {
 			if(tokens[0].equals(vCampus.getCampusCode())) {
 				vUserCampus = new VUserCampus();
 				vUserCampus.setCampusCode(tokens[0]);
-				vUserCampus.setCampusName(vCampus.getCampusName());
+				vUserCampus.setCampusName(tokens[1]);
 				break;
 			}
+		
 		}
 		
+		scanner.close();
+		
 		return vUserCampus;
+	}
+
+	public VUserCollege college(VCollege vCollege) {
+		VUserCollege vUserCollege = null;
+		
+		if(vCollege.getCollegeCode() == "1") {
+			File file = new File("./data/yongin.txt");
+			Scanner scanner = null;
+			
+			try {
+				scanner = new Scanner(file);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
+			
+			while(scanner.hasNext()) {
+				String code = scanner.nextLine(); 
+				String[] tokens = code.split(" "); 
+				
+				if(tokens[0].equals(vCollege.getCollegeCode())) {
+					vUserCollege = new VUserCollege();
+					vUserCollege.setCollegeCode(tokens[0]);
+					vUserCollege.setCollegeName(tokens[1]);
+					break;
+				}
+			
+			}
+			
+			scanner.close();
+		} else {
+			File file = new File("./data/seoul.txt");
+			Scanner scanner = null;
+			
+			try {
+				scanner = new Scanner(file);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
+			
+			while(scanner.hasNext()) {
+				String code = scanner.nextLine(); 
+				String[] tokens = code.split(" "); 
+				
+				if(tokens[0].equals(vCollege.getCollegeCode())) {
+					vUserCollege = new VUserCollege();
+					vUserCollege.setCollegeCode(tokens[0]);
+					vUserCollege.setCollegeName(tokens[1]);
+					break;
+				}
+			
+			}
+			
+			scanner.close();
+		}
+		
+		return vUserCollege;
 	}
 }

@@ -10,7 +10,7 @@ public class Psugangsincheong {
 	private VUserInfo vUserInfo;
 	
 	public Psugangsincheong() {
-		
+	
 	}	
 
 	public void run(VUserInfo vUserInfo, Scanner keyboard) {

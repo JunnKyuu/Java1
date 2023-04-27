@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import valueObject.VUserCampus;
+import valueObject.VUserCollege;
 
 public class PSelectCollege {
 	private VUserCampus vUserCampus;
@@ -52,10 +53,13 @@ public class PSelectCollege {
 				e.printStackTrace();
 			}
 		
-		System.out.print("대학 코드: ");
-		String userCode = keyboard.next();	
+		PCollege pCollege = new PCollege();
+		VUserCollege vUserCollege = pCollege.getCollegeInfo(keyboard);
 		
-//		PCollege pCollege = new PCollege(userCode, keyboard);
-//		pCollege.run(userCode, keyboard);
+		if(vUserCollege != null) {
+			System.out.println("");
+			System.out.println("---------------대학 선택 성공---------------");
+			System.out.println(vUserCollege.getCollegeName() + " 수강신청을 시작하겠습니다!");
+		}
 	}
 }
