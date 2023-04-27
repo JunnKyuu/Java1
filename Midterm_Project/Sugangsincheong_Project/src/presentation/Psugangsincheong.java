@@ -36,7 +36,7 @@ public class Psugangsincheong {
 				e.printStackTrace();
 			}
 		
-		PCampus pCampus = new PCampus(keyboard);
+		PCampus pCampus = new PCampus();
 		VUserCampus vUserCampus = pCampus.getCampusInfo(keyboard);
 		
 		if(vUserCampus != null) {
@@ -44,8 +44,8 @@ public class Psugangsincheong {
 			System.out.println("---------------캠퍼스 선택 성공---------------");
 			System.out.println("안녕하세요 " + vUserInfo.getName() + "님!");
 			
-			PSelectCollege pSellectCollege = new PSelectCollege(vUserCampus, keyboard);
-			pSellectCollege.run();
+			PSelectCollege pSellectCollege = new PSelectCollege();
+			pSellectCollege.run(vUserCampus, keyboard);
 		}
 	}
 

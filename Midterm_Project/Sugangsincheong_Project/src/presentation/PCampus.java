@@ -7,7 +7,7 @@ import valueObject.VUserCampus;
 
 public class PCampus {
 
-	public PCampus(Scanner keyboard) {
+	public PCampus() {
 		
 	}
 

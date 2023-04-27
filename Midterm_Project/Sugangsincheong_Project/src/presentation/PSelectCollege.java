@@ -8,7 +8,11 @@ import valueObject.VUserCampus;
 public class PSelectCollege {
 	private VUserCampus vUserCampus;
 
-	public PSelectCollege(VUserCampus vUserCampus, Scanner keyboard) {
+	public PSelectCollege() {
+		
+	}
+
+	public void run(VUserCampus vUserCampus, Scanner keyboard) {
 		try {
 			this.vUserCampus = vUserCampus;
 			
@@ -47,13 +51,11 @@ public class PSelectCollege {
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
-	}
-
-	public void run() {
-		Scanner sc = new Scanner(System.in);
-		String userCode = sc.next();
 		
-		System.out.println("입력한 코드: " + userCode);
+		System.out.print("대학 코드: ");
+		String userCode = keyboard.next();	
+		
+//		PCollege pCollege = new PCollege(userCode, keyboard);
+//		pCollege.run(userCode, keyboard);
 	}
-
 }
