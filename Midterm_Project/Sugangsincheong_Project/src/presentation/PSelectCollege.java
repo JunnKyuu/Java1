@@ -54,7 +54,7 @@ public class PSelectCollege {
 			}
 		
 		PCollege pCollege = new PCollege();
-		VUserCollege vUserCollege = pCollege.getCollegeInfo(keyboard);
+		VUserCollege vUserCollege = pCollege.getCollegeInfo(vUserCampus, keyboard);
 		
 		if(vUserCollege != null) {
 			System.out.println("");

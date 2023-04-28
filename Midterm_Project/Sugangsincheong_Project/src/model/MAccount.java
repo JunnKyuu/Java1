@@ -73,10 +73,10 @@ public class MAccount {
 		return vUserCampus;
 	}
 
-	public VUserCollege college(VCollege vCollege) {
+	public VUserCollege college(VUserCampus vUserCampus, VCollege vCollege) {
 		VUserCollege vUserCollege = null;
 		
-		if(vCollege.getCollegeCode() == "1") {
+		if(vUserCampus.getCampusCode().equals("1")) {
 			File file = new File("./data/yongin.txt");
 			Scanner scanner = null;
 			
