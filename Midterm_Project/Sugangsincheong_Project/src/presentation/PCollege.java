@@ -24,7 +24,7 @@ public class PCollege {
 		VUserCollege vUserCollege = cCollege.collegeInfo(vUserCampus, vCollege);
 		
 		if(vUserCollege == null) {
-			System.out.println("잘못입력하셨습니다.");
+			System.out.println("대학코드를 잘못입력하셔서 종료합니다.");
 		}
 		
 		return vUserCollege;

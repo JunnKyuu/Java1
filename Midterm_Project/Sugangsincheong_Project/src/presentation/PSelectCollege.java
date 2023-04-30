@@ -60,6 +60,9 @@ public class PSelectCollege {
 			System.out.println("");
 			System.out.println("---------------대학 선택 성공---------------");
 			System.out.println(vUserCollege.getCollegeName() + " 수강신청을 시작하겠습니다!");
+			
+			PMajor pMajor = new PMajor();
+			
 		}
 	}
 }
