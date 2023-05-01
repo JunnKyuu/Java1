@@ -94,6 +94,7 @@ public class MAccount {
 					vUserCollege = new VUserCollege();
 					vUserCollege.setCollegeCode(tokens[0]);
 					vUserCollege.setCollegeName(tokens[1]);
+					vUserCollege.setCollegeNameEng(tokens[2]);
 					break;
 				}
 			
@@ -118,6 +119,7 @@ public class MAccount {
 					vUserCollege = new VUserCollege();
 					vUserCollege.setCollegeCode(tokens[0]);
 					vUserCollege.setCollegeName(tokens[1]);
+					vUserCollege.setCollegeNameEng(tokens[2]);
 					break;
 				}
 			
