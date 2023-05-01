@@ -6,9 +6,11 @@ import java.util.Scanner;
 import valueObject.VCampus;
 import valueObject.VCollege;
 import valueObject.VLogin;
+import valueObject.VMajor;
 import valueObject.VUserCampus;
 import valueObject.VUserCollege;
 import valueObject.VUserInfo;
+import valueObject.VUserMajor;
 
 public class MAccount {
 
@@ -129,5 +131,33 @@ public class MAccount {
 		}
 		
 		return vUserCollege;
+	}
+
+	public VUserMajor major(VUserCollege vUserCollege, VMajor vMajor) {
+		VUserMajor vUserMajor = null;
+		
+		File file = new File("./data/" + vUserCollege.getCollegeNameEng() + ".txt");
+		Scanner scanner = null;
+		
+		try {
+			scanner = new Scanner(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		while(scanner.hasNext()) {
+			String code = scanner.nextLine(); 
+			String[] tokens = code.split(" "); 
+			
+			if(tokens[0].equals(vMajor.getMajorCode())) {
+				vUserMajor = new VUserMajor();
+				vUserMajor.setMajorCode(tokens[0]);
+				vUserMajor.setMajorName(tokens[1]);
+				vUserMajor.setMajorNameEng(tokens[2]);
+				break;
+			}
+		}
+		
+		return vUserMajor;
 	}
 }

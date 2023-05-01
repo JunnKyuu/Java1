@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import valueObject.VUserCampus;
 import valueObject.VUserCollege;
+import valueObject.VUserMajor;
 
 public class PSelectCollege {
 
@@ -54,13 +55,21 @@ public class PSelectCollege {
 		PCollege pCollege = new PCollege();
 		VUserCollege vUserCollege = pCollege.getCollegeInfo(vUserCampus, keyboard);
 		
+		VUserMajor vUserMajor = new VUserMajor();
+		
 		if(vUserCollege != null) {
 			System.out.println("");
 			System.out.println("---------------대학 선택 성공---------------");
-			System.out.println(vUserCollege.getCollegeName() + " 수강신청을 시작하겠습니다!");
+			System.out.println(vUserCollege.getCollegeName() + " 수강신청을 시작하겠습니다.\n");
 			
 			PMajor pMajor = new PMajor();
-			pMajor.getMajorInfo(vUserCollege, keyboard);
+			vUserMajor = pMajor.getMajorInfo(vUserCollege, keyboard);
+		}
+		
+		if(vUserMajor != null) {
+			System.out.println("");
+			System.out.println("---------------전공학과 선택 성공---------------");
+			System.out.println(vUserMajor.getMajorName() + " 수강신청을 시작하겠습니다.\n");
 		}
 	}
 }

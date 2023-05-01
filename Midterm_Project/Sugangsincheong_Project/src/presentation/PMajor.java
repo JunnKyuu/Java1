@@ -4,7 +4,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import controll.CMajor;
+import valueObject.VMajor;
 import valueObject.VUserCollege;
+import valueObject.VUserMajor;
 
 public class PMajor {
 	
@@ -12,10 +15,8 @@ public class PMajor {
 		
 	}
 	
-	public void getMajorInfo(VUserCollege vUserCollege, Scanner keyboard) {
+	public VUserMajor getMajorInfo(VUserCollege vUserCollege, Scanner keyboard) {
 		try {
-			
-			System.out.println(vUserCollege.getCollegeName() + " 수강신청을 시작하겠습니다.\n");
 			System.out.println("다음 전공학과의 코드를 선택하세요.");
 			
 			String collegeNameEng = vUserCollege.getCollegeNameEng();
@@ -35,6 +36,21 @@ public class PMajor {
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
+		
+		System.out.print("전공학과 코드: ");
+		String majorCode = keyboard.next();
+		
+		VMajor vMajor = new VMajor();
+		vMajor.setMajorCode(majorCode); 
+		
+		CMajor cMajor = new CMajor();
+		VUserMajor vUserMajor = cMajor.majorInfo(vUserCollege, vMajor);
+		
+		if(vUserMajor == null) {
+			System.out.println("전공학과 코드를 잘못입력하셔서 종료합니다.");
+		}
+		
+		return vUserMajor;
 	}
 
 }
