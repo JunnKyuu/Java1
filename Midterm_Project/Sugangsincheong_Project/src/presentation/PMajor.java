@@ -17,7 +17,7 @@ public class PMajor {
 	
 	public VUserMajor getMajorInfo(VUserCollege vUserCollege, Scanner keyboard) {
 		try {
-			System.out.println("다음 전공학과의 코드를 선택하세요.");
+			System.out.println("다음 전공 코드를 선택하세요.");
 			
 			String collegeNameEng = vUserCollege.getCollegeNameEng();
 			
@@ -37,7 +37,7 @@ public class PMajor {
 				e.printStackTrace();
 			}
 		
-		System.out.print("전공학과 코드: ");
+		System.out.print("전공 코드: ");
 		String majorCode = keyboard.next();
 		
 		VMajor vMajor = new VMajor();
@@ -47,7 +47,7 @@ public class PMajor {
 		VUserMajor vUserMajor = cMajor.majorInfo(vUserCollege, vMajor);
 		
 		if(vUserMajor == null) {
-			System.out.println("전공학과 코드를 잘못입력하셔서 종료합니다.");
+			System.out.println("전공 코드를 잘못입력하셔서 종료합니다.");
 		}
 		
 		return vUserMajor;
