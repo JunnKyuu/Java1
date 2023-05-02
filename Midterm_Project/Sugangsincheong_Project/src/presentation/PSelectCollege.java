@@ -63,13 +63,7 @@ public class PSelectCollege {
 			System.out.println(vUserCollege.getCollegeName() + " 수강신청을 시작하겠습니다.\n");
 			
 			PMajor pMajor = new PMajor();
-			vUserMajor = pMajor.getMajorInfo(vUserCollege, keyboard);
-		}
-		
-		if(vUserMajor != null) {
-			System.out.println("");
-			System.out.println("---------------전공 선택 성공---------------");
-			System.out.println(vUserMajor.getMajorName() + " 수강신청을 시작하겠습니다.\n");
+			pMajor.run(vUserCollege, keyboard);
 		}
 	}
 }

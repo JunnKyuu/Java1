@@ -10,9 +10,20 @@ import valueObject.VUserCollege;
 import valueObject.VUserMajor;
 
 public class PMajor {
+	private VUserMajor vUserMajor;
 	
 	public PMajor() {
 		
+	}
+	
+	public void run(VUserCollege vUserCollege, Scanner keyboard) {
+		vUserMajor = getMajorInfo(vUserCollege, keyboard);
+		
+		if(vUserMajor != null) {
+			System.out.println("");
+			System.out.println("---------------전공 선택 성공---------------");
+			System.out.println(vUserMajor.getMajorName() + " 수강신청을 시작하겠습니다.\n");
+		}
 	}
 	
 	public VUserMajor getMajorInfo(VUserCollege vUserCollege, Scanner keyboard) {
@@ -52,5 +63,4 @@ public class PMajor {
 		
 		return vUserMajor;
 	}
-
 }
