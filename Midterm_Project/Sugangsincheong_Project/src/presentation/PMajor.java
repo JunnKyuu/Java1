@@ -7,6 +7,7 @@ import java.util.Scanner;
 import controll.CMajor;
 import valueObject.VMajor;
 import valueObject.VUserCollege;
+import valueObject.VUserLecture;
 import valueObject.VUserMajor;
 
 public class PMajor {
@@ -23,6 +24,9 @@ public class PMajor {
 			System.out.println("");
 			System.out.println("---------------전공 선택 성공---------------");
 			System.out.println(vUserMajor.getMajorName() + " 수강신청을 시작하겠습니다.\n");
+			
+			PLecture pLecture = new PLecture();
+			pLecture.run(vUserMajor, keyboard);
 		}
 	}
 	
