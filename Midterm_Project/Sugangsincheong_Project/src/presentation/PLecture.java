@@ -24,7 +24,7 @@ public class PLecture {
 			Scanner lectureFile = new Scanner(new File("./data/" + majorNameEng + ".txt"));
 			
 			while(lectureFile.hasNext()) {
-				int lectureCode = lectureFile.nextInt();
+				String lectureCode = lectureFile.next();
 				String lectureName = lectureFile.next();
 				String lectureProfessorName = lectureFile.next();
 				int lectureGrade = lectureFile.nextInt();
