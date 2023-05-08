@@ -1,81 +1,38 @@
 package presentation;
-
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Vector;
 
+import controll.CIndex;
+import valueObject.VIndex;
 import valueObject.VUserInfo;
 
 public class Psugangsincheong {
+	private CIndex cIndex;
 	
-	private class Index {
-		private int code;
-		private String name;
-		private String fileName;
-		
-		public int getCode() {
-			return code;
-		}
-		
-		public void setCode(int code) {
-			this.code = code;
-		}
-		
-		public String getName() {
-			return name;
-		}
-		
-		public void setName(String name) {
-			this.name = name;
-		}
-		
-		public String getFileName() {
-			return fileName;
-		}
-		
-		public void setFileName(String fileName) {
-			this.fileName = fileName;
-		}
+	public Psugangsincheong() {
+		this.cIndex = new CIndex();
 	}
 	
-	private String nextIndex(String message, String fileName, Scanner keyboard) {
-		try {
-			System.out.println(message);
-			Scanner file = new Scanner(new File(fileName));
-
-			Vector<Index> indexVector = new Vector<Index>();
-			while(file.hasNext()) {	
-				Index index = new Index();
-				index.setCode(file.nextInt());
-				index.setName(file.next());
-				index.setFileName(file.next());
-				indexVector.add(index);
-			
-				System.out.println(index.getCode() + " " + index.getName());
-			}
+	private String selectIndex(String message, String fileName, Scanner keyboard) {
+		System.out.println(message + "코드를 입력하세요.");
 		
-			file.close();
-			
-			String command = keyboard.next(); // 여기서 입력받은 코드를 인덱스로 저장.
-			int selection = Integer.parseInt(command) - 1; 
-			
-			String selectedFileName = indexVector.get(selection).getFileName();
-			return selectedFileName;
-
-			} 	catch (FileNotFoundException e) {
-				e.printStackTrace();
-				return null;  
-			}
-			
+		Vector<VIndex> vIndexVector = cIndex.getVIndexVector(fileName);
+		for(VIndex vIndex: vIndexVector) {
+			System.out.println(vIndex.getCode() + " " + vIndex.getName());
+		}
+				
+		String sCode = keyboard.next();
+		int iCode = Integer.parseInt(sCode);
+		
+		int selectedIndex = 0; 
+		String selectedFileName = vIndexVector.get(selectedIndex).getFileName();
+		
+		return selectedFileName;
 	}
 	
 	public void run(VUserInfo vUserInfo, Scanner keyboard) {
-			System.out.println(vUserInfo.getName() + "님 안녕하세요.\n");
-			String campusFileName = nextIndex("캠퍼스 코드를 선택하세요.","./data/root.txt", keyboard);
-			String collegeFileName = nextIndex("대학 코드를 선택하세요.", "./data/" + campusFileName + ".txt", keyboard);
-			System.out.println(collegeFileName);
-//			String majorFileName = nextIndex("학과 코드를 선택하세요.", "./data/" + collegeFileName + ".txt", keyboard);
-
+			String campusFileName = this.selectIndex("캠퍼스","root", keyboard);
+			String collegeFileName = this.selectIndex("대학", campusFileName, keyboard);
+			String departmentFileName = this.selectIndex("학과", collegeFileName, keyboard);
 	}
 }

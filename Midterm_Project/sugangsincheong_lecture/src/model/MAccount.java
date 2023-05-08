@@ -13,7 +13,7 @@ public class MAccount {
 		// 항상 그릇을 null로 세팅하고 찾으면 그거 반환하고 못찾으면 null 반
 		// 유저 아이디를 찾아서 vUserIdInfo를만들어서 반환 
 		
-		File file = new File("./data/Account.txt");
+		File file = new File("./account/account");
 		Scanner scanner = null;
 		
 		try {
