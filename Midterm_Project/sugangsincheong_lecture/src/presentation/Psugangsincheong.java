@@ -23,8 +23,17 @@ public class Psugangsincheong {
 				
 		String sCode = keyboard.next();
 		int iCode = Integer.parseInt(sCode);
-		
 		int selectedIndex = 0; 
+		int idx = 0;
+		
+		for(VIndex vIndex: vIndexVector) { 
+			if(vIndex.getCode() == iCode) {
+				selectedIndex = idx;
+				break;
+			}
+			idx++;
+		}
+	
 		String selectedFileName = vIndexVector.get(selectedIndex).getFileName();
 		
 		return selectedFileName;
