@@ -15,11 +15,11 @@ public class VIndex {
 		this.code = code;
 	}
 	
-	public String getName() {
+	public String getName() { 
 		return name;
 	}
 	
-	public void setName(String name) {
+	public void setName(String name) { 
 		this.name = name;
 	}
 	
@@ -35,5 +35,9 @@ public class VIndex {
 		this.setCode(file.nextInt());
 		this.setName(file.next());
 		this.setFileName(file.next());
+	}
+	
+	public void show() {
+		System.out.println(this.getCode() + " " + this.getName());
 	}
 }

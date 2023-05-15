@@ -8,22 +8,23 @@ import java.util.Vector;
 import valueObject.VLecture;
 
 public class MLecture {
-	public Vector<VLecture> getVLectureIndexVector(String fileName) {
-		Vector<VLecture> vLectureIndexVector = null;
-		
-		vLectureIndexVector = new Vector<VLecture>();
-		try {
-			Scanner file = new Scanner(new File("./data/" + fileName + ".txt"));
-			while(file.hasNext()) {
-				VLecture vLecture = new VLecture();
-				vLecture.load(file);
-				vLectureIndexVector.add(vLecture);
+
+	public Vector<VLecture> getVLectureVector(String fileName) {
+			Vector<VLecture> vLectureVector = null;
+			try {
+				vLectureVector = new Vector<VLecture>();
+				Scanner file = new Scanner(new File("data/"+fileName+".txt"));
+				while (file.hasNext()) {
+					VLecture vLecture = new VLecture();
+					vLecture.load(file);
+					vLectureVector.add(vLecture);
+				}
+				file.close();							
+			} catch (FileNotFoundException e) {
+				
+				e.printStackTrace();
 			}
-			file.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		return vLectureIndexVector;
+			return vLectureVector;
 	}
 
 }

@@ -3,6 +3,7 @@ package valueObject;
 import java.util.Scanner;
 
 public class VLecture {
+
 	private int code;
 	private String name;
 	private String lecturer;
@@ -55,14 +56,6 @@ public class VLecture {
 		this.setLecturer(file.next());
 		this.setCredit(file.nextInt());
 		this.setTime(file.next());
-
 	}
 	
-	public void show() {
-		System.out.println(this.getCode() 
-				+ " " + this.getName() 
-				+ " " + this.getLecturer()
-				+ " " + this.getCredit()
-				+ " " + this.getTime());
-	}
 }

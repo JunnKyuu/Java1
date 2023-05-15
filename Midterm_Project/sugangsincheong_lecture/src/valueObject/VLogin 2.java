@@ -1,7 +1,6 @@
 package valueObject;
 
-public class VLogin {
-	
+public class VLogin {	
 	private String userId;
 	private String password;
 	
@@ -11,16 +10,14 @@ public class VLogin {
 
 	public void setPassword(String password) {
 		this.password = password;
-		
 	}
 
 	public String getUserId() {
-		
 		return userId;
 	}
 
 	public String getPassword() {
-		
 		return password;
 	}
+
 }

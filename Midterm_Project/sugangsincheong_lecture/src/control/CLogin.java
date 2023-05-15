@@ -1,4 +1,4 @@
-package controll;
+package control;
 
 import model.MAccount;
 import valueObject.VLogin;
@@ -9,8 +9,6 @@ public class CLogin {
 	public VUserInfo login(VLogin vLogin) {
 		MAccount mAccount = new MAccount();
 		VUserInfo vUserInfo = mAccount.login(vLogin);
-		
 		return vUserInfo;
 	}
-
 }
