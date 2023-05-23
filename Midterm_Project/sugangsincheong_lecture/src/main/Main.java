@@ -8,13 +8,8 @@ import valueObject.VUserInfo;
 
 public class Main {
 	
-	public Main() {
-		
-	}
-	
 	private void run() {
 		Scanner keyboard = new Scanner(System.in);
-		
 		PLogin pLogin = new PLogin();
 		VUserInfo vUserInfo = pLogin.login(keyboard);
 		

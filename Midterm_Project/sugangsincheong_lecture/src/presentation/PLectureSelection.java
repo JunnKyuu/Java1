@@ -27,8 +27,13 @@ public class PLectureSelection {
 		
 		String sCode = keyboard.next();		
 		int iCode = Integer.parseInt(sCode);
-		//iCode -> selectedIndex
 		int selectedIndex = 0;
+		for (VIndex vIndex: vIndexVector) {
+			if(iCode == vIndex.getCode()) {
+				break;
+			}
+			selectedIndex++;
+		}
 		String selectedFileName = vIndexVector.get(selectedIndex).getFileName();
 		return selectedFileName;
 	}
@@ -42,18 +47,23 @@ public class PLectureSelection {
 		
 		String sCode = keyboard.next();
 		int iCode = Integer.parseInt(sCode);
-		//iCode -> selectedIndex
 		int selectedIndex = 0;
+		for(VLecture vLecture: vLectureVector) {
+			if(iCode == vLecture.getCode()) {
+				break;
+			}
+			selectedIndex ++;
+		}
 		VLecture vLecture = vLectureVector.get(selectedIndex);
 		return vLecture;
 	}
 	
 	public VLecture selectLecture(VUserInfo vUserInfo, Scanner keyboard) {		
-			String campusFileName = this.findIndex("캠퍼스","root",keyboard );
-			String collegeFileName = this.findIndex("대학",campusFileName,keyboard );
-			String departmentFileName = this.findIndex("학과",collegeFileName,keyboard );
+			String campusFileName = this.findIndex("캠퍼스","root", keyboard );
+			String collegeFileName = this.findIndex("대학",campusFileName, keyboard );
+			String departmentFileName = this.findIndex("학과",collegeFileName, keyboard );
 			
-			VLecture vLecture = this.findLecture("강좌",departmentFileName,keyboard);
+			VLecture vLecture = this.findLecture("강좌",departmentFileName, keyboard);
 			return vLecture;
 	}
 	

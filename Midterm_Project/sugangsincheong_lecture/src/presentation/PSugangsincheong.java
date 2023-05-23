@@ -5,7 +5,6 @@ import java.util.Scanner;
 import valueObject.VLecture;
 import valueObject.VUserInfo;
 
-
 public class PSugangsincheong {	
 
 	private PLectureSelection pLectureSelection; 
@@ -20,7 +19,6 @@ public class PSugangsincheong {
 		
 	public void run(VUserInfo vUserInfo, Scanner keyboard) {	
 		VLecture vLecture = null;
-		boolean bRunning = true;
 		
 		while(true) {
 			System.out.println("강좌선택 0, 미리담기 1, 수강신청 2, 종료 9");
@@ -41,9 +39,8 @@ public class PSugangsincheong {
 				pSincheongBasket.show();
 				break;
 			case 9:
-				bRunning = false;
-				// 종료하는 메세지 
-				break;
+				System.out.println("수강신청을 종료합니다.");
+				System.exit(0);
 			default:
 				break;
 			}
