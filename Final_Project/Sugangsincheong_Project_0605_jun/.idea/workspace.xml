@@ -1,159 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a8d5a3-f8dc-4873-a645-595a9a6acb8f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../230327  Prefix_Calculator2/Project0327/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../230327  Prefix_Calculator2/Project0327/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../230329 Refactoring_Prefix_Calculator2/Project0329/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../230329 Refactoring_Prefix_Calculator2/Project0329/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sugangsincheong/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sugangsincheong/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sugangsincheong/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sugangsincheong/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sugangsincheong/Sugangsincheong.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/account/account" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/control/CIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/control/CLecture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/control/CLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/main/PMainFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/model/MAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/model/MIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/model/MLecture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/presentation/PLectureBasket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/presentation/PLectureSelection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/presentation/PLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/presentation/PSugangsincheong.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/valueObject/VIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/valueObject/VLecture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/valueObject/VLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/bin/valueObject/VUserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/Account.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/Chinese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/Department of International Trade.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/Japanese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/Korean.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/Management Information Science Division.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/Real estate department.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/VSugangsincheong.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/administration.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/arab.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/architect.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/architecture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/art.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/artHistory.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/baduk.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/basic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/basicArchitecture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/basket.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/business.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/chemistry.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/children.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/computer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/convergence.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/convergencedSoftware.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/design.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/digitalContents.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/digitalContentsDesign.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/digitalMedia.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/economy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/electricity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/electronic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/energy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/engineering.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/english.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/englishYG.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/environmental.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/food.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/generalS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/generalY.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/history.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/human.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/ict.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/industrial.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/information.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/internationalTrade.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/law.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/lawC.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/library.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/life.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/login.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/management.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/managementEducation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/managementInformation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/material.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/math.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/mechanical.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/music.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/musical.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/philosophy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/physical.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/physics.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/politics.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/property.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/root.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/science.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/selective.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/seoul.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/sincheong.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/social.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/software.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/student.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/teenager.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/traditionArchitecture.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/transportation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/welfare.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/writing.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/data/yongin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/control/CIndex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/control/CLecture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/control/CLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/main/PMainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/model/MAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/model/MIndex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/model/MLecture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/presentation/PLectureBasket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/presentation/PLectureSelection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/presentation/PLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/presentation/PSugangsincheong.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/valueObject/VIndex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/valueObject/VLecture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/valueObject/VLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_Project_Backup/Sugangsincheong_Project/src/valueObject/VUserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Midterm_Project/Sugangsincheong_Project/bin/.gitignore" beforeDir="false" />
-    </list>
+    <list default="true" id="4aee6579-9e00-438e-a6c6-95d8c62bdd06" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="ProjectId" id="2Qlyzd8oLnMixqQ1M4vcRCSat3h" />
+  <component name="ProjectId" id="2Qlz2zrWWHKkNUEm6I1O2Bvmjb2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82a8d5a3-f8dc-4873-a645-595a9a6acb8f" name="Changes" comment="" />
-      <created>1685942725857</created>
+      <changelist id="4aee6579-9e00-438e-a6c6-95d8c62bdd06" name="Changes" comment="" />
+      <created>1685942758845</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685942725857</updated>
-      <workItem from="1685942727159" duration="32000" />
+      <updated>1685942758845</updated>
+      <workItem from="1685942760208" duration="522000" />
+      <workItem from="1685943333841" duration="2000" />
     </task>
     <servers />
   </component>
