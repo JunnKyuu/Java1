@@ -24,12 +24,12 @@ public class PLectureSelection extends JPanel {
 	}
 	
 	public PLectureSelection() {
-//		String[] title = new String[1];
-//		String[][] contents = new String[1][2];
-//		
-//		PSelection PCampus = new PSelection(contents, title);
-//		JScrollPane scrollPane =  new JScrollPane(PCampus);
-//		this.add(scrollPane);
+		String[] title = new String[1];
+		String[][] contents = new String[1][2];
+
+		PSelection PCampus = new PSelection(contents, title);
+		JScrollPane scrollPane =  new JScrollPane(PCampus);
+		this.add(scrollPane);
 		
 		this.cIndex = new CIndex();
 		this.cLecture = new CLecture();

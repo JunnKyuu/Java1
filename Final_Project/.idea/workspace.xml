@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="90993d08-cb5a-480e-a4ff-c6e636880b12" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../230327  Prefix_Calculator2/Project0327/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../230327  Prefix_Calculator2/Project0327/.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../230329 Refactoring_Prefix_Calculator2/Project0329/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../230329 Refactoring_Prefix_Calculator2/Project0329/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Final_Project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/Sugangsincheong_Project_0605_jun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/Sugangsincheong_Project_0605_jun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/src/presentation/PLectureSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sugangsincheong_Project_0605_jun/src/presentation/PLectureSelection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Final_Project_Backup/Sugangsincheong_Project/.classpath" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Final_Project_Backup/Sugangsincheong_Project/.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Final_Project_Backup/Sugangsincheong_Project/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
@@ -149,6 +146,10 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/junkyulee/Desktop/Study/Git/Java1/Final_Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -182,7 +183,10 @@
       <updated>1685944821382</updated>
       <workItem from="1685944822471" duration="163000" />
       <workItem from="1685944990645" duration="58000" />
-      <workItem from="1685945062496" duration="145000" />
+      <workItem from="1685945062496" duration="532000" />
+      <workItem from="1685949945625" duration="525000" />
+      <workItem from="1686049267422" duration="625000" />
+      <workItem from="1686068436453" duration="86000" />
     </task>
     <servers />
   </component>
