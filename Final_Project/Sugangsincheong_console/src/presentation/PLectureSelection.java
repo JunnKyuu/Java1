@@ -24,11 +24,21 @@ public class PLectureSelection {
 		for (VIndex vIndex: vIndexVector) {
 			System.out.println(vIndex.getCode() + " " + vIndex.getName() );
 		}
+		System.out.print("입력: ");
 		
-		String sCode = keyboard.next();		
+		String sCode = keyboard.next();	
+		System.out.println("");
+		
 		int iCode = Integer.parseInt(sCode);
-		//iCode -> selectedIndex
 		int selectedIndex = 0;
+		
+		for(VIndex vIndex: vIndexVector) {
+			if(iCode == vIndex.getCode()) {
+				break;
+			}
+			selectedIndex ++;
+		}
+		
 		String selectedFileName = vIndexVector.get(selectedIndex).getFileName();
 		return selectedFileName;
 	}
@@ -39,11 +49,18 @@ public class PLectureSelection {
 		for (VLecture vLecture: vLectureVector) {
 			vLecture.show();
 		}
+		System.out.print("입력: ");
 		
 		String sCode = keyboard.next();
+		System.out.println("");
 		int iCode = Integer.parseInt(sCode);
-		//iCode -> selectedIndex
 		int selectedIndex = 0;
+		for(VLecture vLecture: vLectureVector) {
+			if(iCode == vLecture.getCode()) {
+				break;
+			}
+			selectedIndex ++;
+		}
 		VLecture vLecture = vLectureVector.get(selectedIndex);
 		return vLecture;
 	}

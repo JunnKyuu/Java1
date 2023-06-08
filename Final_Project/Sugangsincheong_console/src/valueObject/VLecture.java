@@ -55,7 +55,6 @@ public class VLecture {
 		this.setLecturer(file.next());
 		this.setCredit(file.nextInt());
 		this.setTime(file.next());
-
 	}
 	
 	public void show() {

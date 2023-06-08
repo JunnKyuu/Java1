@@ -15,11 +15,11 @@ public class VIndex {
 		this.code = code;
 	}
 	
-	public String getName() { //안의 name을 읽어서 밖으로 전달
+	public String getName() { 
 		return name;
 	}
 	
-	public void setName(String name) { //밖에서 name을 읽어서 내용을 바꿈
+	public void setName(String name) { 
 		this.name = name;
 	}
 	

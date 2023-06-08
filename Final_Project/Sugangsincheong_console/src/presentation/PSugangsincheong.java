@@ -5,7 +5,6 @@ import java.util.Scanner;
 import valueObject.VLecture;
 import valueObject.VUserInfo;
 
-
 public class PSugangsincheong {	
 
 	private PLectureSelection pLectureSelection; 
@@ -24,8 +23,10 @@ public class PSugangsincheong {
 		
 		while(bRunning) {
 			System.out.println("강좌선택 0, 미리담기 1, 수강신청 2, 종료 9");
+			System.out.print("입력: ");
 			
 			String sCode = keyboard.next();
+			System.out.println("");
 			int iCode = Integer.parseInt(sCode);
 			
 			switch(iCode) {
@@ -33,10 +34,17 @@ public class PSugangsincheong {
 				vLecture = this.pLectureSelection.selectLecture(vUserInfo, keyboard);
 				break;
 			case 1:
+				if(vLecture == null) {
+					System.out.println("장바구니가 비어있습니다. 강좌를 담아주세요!");
+					break;
+				}
 				pMiridamgiBasket.add(vLecture);
 				pMiridamgiBasket.show();
-				break;
 			case 2:
+				if(vLecture == null) {
+					System.out.println("장바구니가 비어있습니다. 강좌를 담아주세요!");
+					break;
+				}
 				pSincheongBasket.add(vLecture);
 				pSincheongBasket.show();
 				break;
