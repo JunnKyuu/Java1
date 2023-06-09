@@ -7,6 +7,7 @@ import presentation.PSugangsincheong;
 import valueObject.VUserInfo;
 
 public class Main {	
+	
 	private void run() {
 		Scanner keyboard = new Scanner(System.in);		
 		PLogin pLogin = new PLogin();

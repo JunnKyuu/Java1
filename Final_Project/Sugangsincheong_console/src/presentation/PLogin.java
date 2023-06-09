@@ -1,5 +1,5 @@
 package presentation;
-import java.io.FileNotFoundException;
+
 import java.util.Scanner;
 
 import control.CLogin;
