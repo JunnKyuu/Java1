@@ -66,11 +66,11 @@ public class PLectureSelection {
 	}
 	
 	public VLecture selectLecture(VUserInfo vUserInfo, Scanner keyboard) {		
-			String campusFileName = this.findIndex("캠퍼스","root",keyboard );
-			String collegeFileName = this.findIndex("대학",campusFileName,keyboard );
-			String departmentFileName = this.findIndex("학과",collegeFileName,keyboard );
+			String campusFileName = this.findIndex("캠퍼스", "root", keyboard );
+			String collegeFileName = this.findIndex("대학", campusFileName, keyboard );
+			String departmentFileName = this.findIndex("학과", collegeFileName, keyboard );
 			
-			VLecture vLecture = this.findLecture("강좌",departmentFileName,keyboard);
+			VLecture vLecture = this.findLecture("강좌", departmentFileName, keyboard);
 			return vLecture;
 	}
 	

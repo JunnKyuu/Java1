@@ -10,11 +10,11 @@ public class PLogin {
 
 	public VUserInfo login(Scanner keyboard){
 		
-		System.out.println("사용자 이름을 입력해주세요.");
+		System.out.println("---------------------------로그인 시작---------------------------");
+		System.out.println("아이디를 입력해주세요.");
 		String userId = keyboard.next();
 		System.out.println("비밀번호를 입력해주세요.");
 		String password = keyboard.next();
-		System.out.println("");
 		
 		VLogin vLogin = new VLogin();
 		vLogin.setUserId(userId);
@@ -23,12 +23,13 @@ public class PLogin {
 		CLogin cLogin = new CLogin();
 		VUserInfo vUserInfo = cLogin.login(vLogin);
 		if (vUserInfo == null) {
-			System.out.println("----------로그인 실패----------");
+			System.out.println("로그인에 실패하였습니다!");
 			System.out.println("잘 못 입력하였습니다.");
 		}
 		else {
-			System.out.println("----------로그인 성공----------");
+			System.out.println("로그인에 성공하였습니다! ");
 			System.out.println(vUserInfo.getName() + "님 안녕하세요");
+			System.out.println("");
 			System.out.println("");
 		}
 		return vUserInfo;
