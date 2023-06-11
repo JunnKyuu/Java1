@@ -19,7 +19,7 @@ public class PLectureSelection {
 	}
 	
 	private String findIndex(String message, String fileName, Scanner keyboard) {
-		System.out.println(message + "코드를 입력하세요");
+		System.out.println("**" + message + "코드를 입력하세요**");
 		Vector<VIndex> vIndexVector = cIndex.getVIndexVector(fileName);
 		for (VIndex vIndex: vIndexVector) {
 			System.out.println(vIndex.getCode() + " " + vIndex.getName() );
@@ -28,23 +28,32 @@ public class PLectureSelection {
 		
 		String sCode = keyboard.next();	
 		System.out.println("");
-		
+		String selectedFileName = null;
 		int iCode = Integer.parseInt(sCode);
 		int selectedIndex = 0;
-		
+				
 		for(VIndex vIndex: vIndexVector) {
-			if(iCode == vIndex.getCode()) {
+			int temp = vIndex.getCode();
+			
+			if(iCode == temp) {
 				break;
 			}
+			
 			selectedIndex ++;
 		}
 		
-		String selectedFileName = vIndexVector.get(selectedIndex).getFileName();
+		if(selectedIndex == vIndexVector.size()) {
+			System.out.println("**잘못입력하였습니다! 다시 입력해주세요!**");
+			selectedIndex = 0;
+			selectedFileName=this.findIndex(message, fileName, keyboard);
+		}else {
+			selectedFileName = vIndexVector.get(selectedIndex).getFileName();
+		}
 		return selectedFileName;
 	}
 	
 	private VLecture findLecture(String message, String fileName, Scanner keyboard) {
-		System.out.println(message + "코드를 입력하세요");
+		System.out.println("**" + message + "코드를 입력하세요**");
 		Vector<VLecture> vLectureVector = cLecture.getVLectureVector(fileName);
 		for (VLecture vLecture: vLectureVector) {
 			vLecture.show();
@@ -55,13 +64,24 @@ public class PLectureSelection {
 		System.out.println("");
 		int iCode = Integer.parseInt(sCode);
 		int selectedIndex = 0;
-		for(VLecture vLecture: vLectureVector) {
-			if(iCode == vLecture.getCode()) {
+		VLecture vLecture = null;
+		
+		for(VLecture vLecture1: vLectureVector) {
+			int temp = vLecture1.getCode();
+			
+			if(iCode == temp) {
 				break;
 			}
 			selectedIndex ++;
 		}
-		VLecture vLecture = vLectureVector.get(selectedIndex);
+		
+		if(selectedIndex == vLectureVector.size()) {
+			System.out.println("**잘못입력하였습니다! 다시 입력해주세요!**");
+			selectedIndex = 0;
+			vLecture=this.findLecture(message, fileName, keyboard);
+		}else {
+			vLecture = vLectureVector.get(selectedIndex);
+		}
 		return vLecture;
 	}
 	

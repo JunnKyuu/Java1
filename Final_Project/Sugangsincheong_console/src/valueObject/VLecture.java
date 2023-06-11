@@ -59,9 +59,9 @@ public class VLecture {
 	
 	public void show() {
 		System.out.println(this.getCode() 
-				+ " " + this.getName() 
+				+ " " +  this.getName() 
 				+ " " + this.getLecturer()
-				+ " " + this.getCredit()
+				+ " " + this.getCredit() + "학점"
 				+ " " + this.getTime());
 	}
 }

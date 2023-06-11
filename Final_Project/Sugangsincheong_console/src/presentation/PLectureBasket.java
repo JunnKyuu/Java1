@@ -20,4 +20,16 @@ public class PLectureBasket {
 			vLecture.show();
 		}
 	}
+	
+	public void clear() {
+		this.vLectureVector.clear();
+	}
+	
+	public boolean isEmpty() {
+		if(this.vLectureVector.isEmpty()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
