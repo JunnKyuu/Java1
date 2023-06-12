@@ -75,6 +75,7 @@ public class PSugangsincheong {
 				if(miridamgiMenu == 2) {
 					System.out.println("**장바구니 목록이 초기화 되었습니다!**");
 					pMiridamgiBasket.clear();
+					pTempBasket.clear();
 				}
 				
 				if(miridamgiMenu == 9) {
